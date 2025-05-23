@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Exam Week 2</title>
+  <style>
+    .cover {
+      position: relative;
+      background: url('https://images.pexels.com/photos/533280/pexels-photo-533280.jpeg?auto=compress&cs=tinysrgb&w=1500&h=750&dpr=1') no-repeat center/cover;
+      height: 60vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="max-w-7xl mx-auto flex items-center justify-between p-4">
+      <div class="flex items-center space-x-3">
+        <a href="#" class="hidden sm:block">
+          <img src="https://useaxentix.com/2.2.x/img/axentix.svg" alt="Axentix Logo" class="h-10 w-auto hover:opacity-80 transition" />
+        </a>
+        <a href="#" class="text-2xl font-bold text-blue-600 hover:text-blue-700">
+          AfzalNextLevel
+        </a>
+      </div>
+      <ul class="hidden md:flex space-x-8 text-gray-700 font-semibold">
+        <li><a href="#" class="hover:text-blue-600 transition">Home</a></li>
+        <li><a href="#" class="hover:text-blue-600 transition">Services</a></li>
+        <li><a href="#" class="hover:text-blue-600 transition">About</a></li>
+        <li><a href="#" class="hover:text-blue-600 transition">Contact</a></li>
+      </ul>
+      <button id="menuBtn"
+              aria-label="Toggle Menu"
+              aria-expanded="false"
+              aria-controls="mobileMenu"
+              class="md:hidden text-gray-700 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </nav>
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-200 transition-all duration-300 ease-in-out">
+      <ul class="flex flex-col space-y-2 p-4 text-gray-700 font-semibold">
+        <li><a href="#" class="block hover:text-blue-600 transition">Home</a></li>
+        <li><a href="#" class="block hover:text-blue-600 transition">Services</a></li>
+        <li><a href="#" class="block hover:text-blue-600 transition">About</a></li>
+        <li><a href="#" class="block hover:text-blue-600 transition">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <section class="cover mb-8 text-white text-center py-20 px-4">
+    <h1 class="text-4xl md:text-5xl font-extrabold drop-shadow-lg">
+      Welcome to My Responsive Web Page
+    </h1>
+  </section>
+  <section class="max-w-7xl mx-auto px-4 py-12">
+    <h2 class="text-3xl font-bold text-center mb-10 text-gray-800">Our Fruit Collection</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Card 1: Mango -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition">
+        <img src="https://images.pexels.com/photos/2294471/pexels-photo-2294471.jpeg?auto=compress&cs=tinysrgb&w=640&h=480&dpr=1" alt="Mango" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Mango Delight</h3>
+          <p class="text-gray-600 text-sm">Fresh and juicy mango straight from the farm.</p>
+        </div>
+      </div>
+      <!-- Card 2: Carrot -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition">
+        <img src="https://images.pexels.com/photos/143133/pexels-photo-143133.jpeg?auto=compress&cs=tinysrgb&w=640&h=480&dpr=1" alt="Carrot" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Carrot Crunch</h3>
+          <p class="text-gray-600 text-sm">Crisp and vibrant carrots from local fields.</p>
+        </div>
+      </div>
+      <!-- Card 3: Banana -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition">
+        <img src="https://images.pexels.com/photos/2872755/pexels-photo-2872755.jpeg?auto=compress&cs=tinysrgb&w=640&h=480&dpr=1" alt="Banana" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Banana Bliss</h3>
+          <p class="text-gray-600 text-sm">Sweet and ripe bananas ready to enjoy.</p>
+        </div>
+      </div>
+      <!-- Card 4: Apple -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition">
+        <img src="https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg?auto=compress&cs=tinysrgb&w=640&h=480&dpr=1" alt="Apple" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Apple Fresh</h3>
+          <p class="text-gray-600 text-sm">Crisp and juicy apples from the orchard.</p>
+        </div>
+      </div>
+       <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition">
+        <img src="https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg?auto=compress&cs=tinysrgb&w=640&h=480&dpr=1" alt="Apple" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Apple Fresh</h3>
+          <p class="text-gray-600 text-sm">Crisp and juicy apples from the orchard.</p>
+        </div>
+      </div>
+       <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition">
+        <img src="https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg?auto=compress&cs=tinysrgb&w=640&h=480&dpr=1" alt="Apple" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Apple Fresh</h3>
+          <p class="text-gray-600 text-sm">Crisp and juicy apples from the orchard.</p>
+        </div>
+      </div>
+      <!-- 
+      Card 5: Orange
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition">
+        <img src="https://images.pexels.com/photos/161559/pexels-photo-161559.jpeg?auto=compress&cs=tinysrgb&w=640&h=480&dpr=1" alt="Orange" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Orange Zest</h3>
+          <p class="text-gray-600 text-sm">Tangy and refreshing oranges for you.</p>
+        </div>
+      </div>
+       Card 6: Strawberry 
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition">
+        <!-- <img src="https://images.pexels.com/photos/70746/strawberries-fruit-red-sweet-70746.jpeg?auto=compress&cs=tinysrgb&w=640&h=480&dpr=1" alt="Strawberry" class="w-full h-48 object-cover"> -->
+        <!-- <div class="p-4"> -->
+          <!-- <h3 class="text-xl font-semibold text-gray-800 mb-2">Strawberry Sweet</h3> -->
+          <!-- <p class="text-gray-600 text-sm">Plump and sweet strawberries from the farm.</p> -->
+        <!-- </div> -->
+      <!-- </div> -->
+    <!-- </div>  -->
+     <!-- -- -->
+  </section>
+  <section class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg mb-12">
+    <h2 class="text-2xl font-bold mb-6 text-center">Contact Us</h2>
+    <form id="contactForm" novalidate>
+      <div class="mb-4">
+        <label for="name" class="block font-semibold mb-1">Name<span class="text-red-500">*</span></label>
+        <input type="text" id="name" name="name" required
+          class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        <p class="text-red-600 text-sm mt-1 hidden" id="nameError">Please enter your name.</p>
+      </div>
+      <div class="mb-4">
+        <label for="email" class="block font-semibold mb-1">Email<span class="text-red-500">*</span></label>
+        <input type="email" id="email" name="email" required
+          class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        <p class="text-red-600 text-sm mt-1 hidden" id="emailError">Please enter a valid email.</p>
+      </div>
+      <div class="mb-4">
+        <label for="message" class="block font-semibold mb-1">Message<span class="text-red-500">*</span></label>
+        <textarea id="message" name="message" required rows="4"
+          class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+        <p class="text-red-600 text-sm mt-1 hidden" id="messageError">Please enter your message.</p>
+      </div>
+      <button type="submit" class="bg-blue-600 text-white font-semibold px-6 py-2 rounded hover:bg-blue-700 transition">
+        Submit
+      </button>
+      <p id="successMsg" class="text-green-600 mt-4 hidden">Form submitted successfully!</p>
+    </form>
+  </section>
+  <footer class="bg-gray-800 text-gray-300 py-6">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+      <p class="text-sm">© 2025 YourCompany. All rights reserved.</p>
+      <div class="mt-4 md:mt-0 space-x-4">
+        <a href="#" class="hover:text-white">Privacy Policy</a>
+        <a href="#" class="hover:text-white">Terms of Service</a>
+        <a href="#" class="hover:text-white">Contact</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const form = document.getElementById('contactForm');
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const messageInput = document.getElementById('message');
+    const nameError = document.getElementById('nameError');
+    const emailError = document.getElementById('emailError');
+    const messageError = document.getElementById('messageError');
+    const successMsg = document.getElementById('successMsg');
+    function validateEmail(email) {
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      nameError.classList.add('hidden');
+      emailError.classList.add('hidden');
+      messageError.classList.add('hidden');
+      successMsg.classList.add('hidden');
+      let valid = true;
+      if (!nameInput.value.trim()) {
+        nameError.classList.remove('hidden');
+        valid = false;
+      }
+      if (!emailInput.value.trim() || !validateEmail(emailInput.value.trim())) {
+        emailError.classList.remove('hidden');
+        valid = false;
+      }
+      if (!messageInput.value.trim()) {
+        messageError.classList.remove('hidden');
+        valid = false;
+      }
+      if (!valid) return;
+      const formData = {
+        name: nameInput.value.trim(),
+        email: emailInput.value.trim(),
+        message: messageInput.value.trim(),
+        submittedAt: new Date().toISOString()
+      };
+      localStorage.setItem('contactFormData', JSON.stringify(formData));
+      successMsg.classList.remove('hidden');
+      form.reset();
+    });
+    window.addEventListener('DOMContentLoaded', () => {
+      const savedData = localStorage.getItem('contactFormData');
+      if (savedData) {
+        const data = JSON.parse(savedData);
+        nameInput.value = data.name;
+        emailInput.value = data.email;
+        messageInput.value = data.message;
+      }
+    });
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => {
+      const isHidden = mobileMenu.classList.toggle('hidden');
+      menuBtn.setAttribute('aria-expanded', !isHidden);
+    });
+  </script>
+</body>
+</html>
